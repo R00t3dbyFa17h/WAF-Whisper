@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waf-whisper"
+version = "5.1.0"
+description = "Adaptive WAF detection & evasion engine — stealth fingerprinting, rate-limit profiling, payload fragmentation and mutation for authorized web-app testing."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "R00t3dbyFa17h" }]
+keywords = ["waf", "evasion", "bug-bounty", "web-security", "red-team", "firewall"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+dependencies = ["requests>=2.25", "urllib3>=1.26"]
+
+[project.urls]
+Homepage = "https://github.com/R00t3dbyFa17h/WAF-Whisper"
+Repository = "https://github.com/R00t3dbyFa17h/WAF-Whisper"
+Issues = "https://github.com/R00t3dbyFa17h/WAF-Whisper/issues"
+
+[project.scripts]
+waf-whisper = "waf_whisper:main"
+
+[tool.setuptools]
+py-modules = ["waf_whisper"]

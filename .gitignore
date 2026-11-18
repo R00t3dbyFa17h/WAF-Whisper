@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Generated reports & auto-generated PoC scripts
+WAF_Whisper_Reports/
+exploit_*.py
+*.log
